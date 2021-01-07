@@ -1,4 +1,4 @@
-# Stock Price Tracker
+# Apache Storm Stock Price Tracker
 
 ### Set up the Spout
  * Extend the BaseRickSpout class
@@ -9,4 +9,4 @@
  ### Set up the Bold
   * Extend the BaseBasicBolt class
   * Compute Gain/Loss signal
-  - Write data to file
+  * Write data to file
