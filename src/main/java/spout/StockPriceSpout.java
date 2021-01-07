@@ -41,13 +41,13 @@ public class StockPriceSpout extends BaseRichSpout {
     @Override
     public void nextTuple() {
         try {
-            StockQuote quote = YahooFinance.get(Constants.MSFI).getQuote();
+            StockQuote quote = YahooFinance.get(Constants.AAPL).getQuote();
 
             BigDecimal price = quote.getPrice();
             BigDecimal prevClose = quote.getPreviousClose();
             Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 
-            collector.emit(new Values(Constants.MSFI, sdf.format(timestamp),
+            collector.emit(new Values(Constants.AAPL, sdf.format(timestamp),
                                     price.doubleValue(), prevClose.doubleValue()));
 
         } catch (Exception e) {

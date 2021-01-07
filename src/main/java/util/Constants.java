@@ -8,7 +8,7 @@ public class Constants {
     public static final String PREV_CLOSE_FIELD = "prev_close";
     public static final String GAIN_FIELD = "gain";
 
-    public static final String MSFI = "MSEGX";
+    public static final String AAPL = "AAPL";
 
 
     public static final String STOCK_PRICE_TRACKER_SPOUT = "STOCK_PRICE_TRACKER";
