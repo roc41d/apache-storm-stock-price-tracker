@@ -1,6 +1,4 @@
 package bolt;
-
-import org.apache.log4j.Logger;
 import org.apache.storm.task.OutputCollector;
 import org.apache.storm.task.TopologyContext;
 import org.apache.storm.topology.OutputFieldsDeclarer;
@@ -11,7 +9,6 @@ import java.util.Map;
 
 public abstract class CustomBaseRichBolt extends BaseRichBolt {
 
-    protected Logger LOG;
 
     private OutputCollector collector;
     private Map<String, Object> topologyConfig;
